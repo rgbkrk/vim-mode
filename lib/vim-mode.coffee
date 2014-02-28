@@ -1,6 +1,6 @@
 VimState = require './vim-state'
 
-console.log "test"
+console.log "Booting pseudo-vim"
 
 module.exports =
 

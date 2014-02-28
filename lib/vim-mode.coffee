@@ -13,5 +13,6 @@ module.exports =
 
   deactivate: ->
     # Put the user back in insert mode before ending
+    console.log "Bye bye vim."
     atom.workspaceView.eachEditorView(editorView) ->
-      editorView.vimState.activateInsertMode
+      editorView.vimState.activateInsertMode()

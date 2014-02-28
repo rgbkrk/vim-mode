@@ -1,5 +1,7 @@
 VimState = require './vim-state'
 
+console.log "test"
+
 module.exports =
 
   activate: (state) ->
@@ -11,4 +13,5 @@ module.exports =
 
   deactivate: ->
     # Put the user back in insert mode before ending
-    @vimState.activateInsertMode()
+    atom.workspaceView.eachEditorView(editorView) ->
+      editorView.vimState.activateInsertMode
